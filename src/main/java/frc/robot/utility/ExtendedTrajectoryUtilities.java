@@ -27,11 +27,6 @@ import edu.wpi.first.wpilibj.shuffleboard.ShuffleboardTab;
 import edu.wpi.first.wpilibj2.command.CommandBase;
 import edu.wpi.first.wpilibj2.command.InstantCommand;
 import edu.wpi.first.wpilibj2.command.SequentialCommandGroup;
-import frc.robot.subsystem.swerve.pathfollowingswerve.PathFollowingSwerve;
-import frc.robot.subsystem.swerve.pathfollowingswerve.command.FollowDottedTrajectoryCommand;
-import frc.robot.subsystem.swerve.pathfollowingswerve.command.FollowStatesCommand;
-import frc.robot.subsystem.swerve.pathfollowingswerve.command.FollowTrajectoryCommand;
-
 
 
 /**
