@@ -1,4 +1,4 @@
 package frc.robot.subsystem.arm.command;
 
-public class Arm {
+public class ArmDownCommand {
 }
