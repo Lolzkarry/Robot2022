@@ -8,15 +8,15 @@
 package frc.robot.subsystem.swerve.pathfollowingswerve.factory;
 
 import edu.wpi.first.wpilibj.I2C.Port;
-import edu.wpi.first.wpilibj.geometry.Translation2d;
-import edu.wpi.first.wpilibj.util.Units;
-import frc.robot.components.hardware.AHRSAngleGetterComponent;
-import frc.robot.components.hardware.TalonFXComponent;
-import frc.robot.components.hardware.TalonSRXComponent;
+import edu.wpi.first.math.geometry.Translation2d;
+import edu.wpi.first.math.util.Units;
+import frc.robot.component.hardware.AHRSAngleGetterComponent;
+import frc.robot.component.hardware.TalonFXComponent;
+import frc.robot.component.hardware.TalonSRXComponent;
 import frc.robot.subsystem.swerve.pathfollowingswerve.OdometricSwerve;
 import frc.robot.subsystem.swerve.pathfollowingswerve.OdometricWheelModule;
-import frc.robot.subsystems.swerve.odometric.OdometricSwerve;
-import frc.robot.subsystems.swerve.odometric.OdometricWheelModule;
+import frc.robot.subsystem.swerve.pathfollowingswerve.OdometricSwerve;
+import frc.robot.subsystem.swerve.pathfollowingswerve.OdometricWheelModule;
 
 /**
  * Add your docs here.

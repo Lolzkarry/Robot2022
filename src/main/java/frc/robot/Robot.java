@@ -10,6 +10,10 @@ import edu.wpi.first.wpilibj.smartdashboard.SmartDashboard;
 import edu.wpi.first.wpilibj2.command.Command;
 import frc.robot.container.PrimaryRobotContainer;
 import frc.robot.container.RobotContainer;
+import edu.wpi.first.cscore.UsbCamera;
+import edu.wpi.first.cameraserver.CameraServer;
+import edu.wpi.first.cscore.CvSink;
+import edu.wpi.first.cscore.CvSource;
 
 /**
  * The VM is configured to automatically run this class, and to call the functions corresponding to
@@ -28,6 +32,8 @@ public class Robot extends TimedRobot {
   @Override
   public void robotInit() {
     robotContainer = new PrimaryRobotContainer();
+    Thread m_visionThread;
+    m_visionThread = new Thread(() -> {UsbCamera camera = CameraServer.startAutomaticCapture(); camera.setResolution(640, 480); CvSink cvSink = CameraServer.getVideo(); CvSource outputStream = CameraServer.putVideo("Front",640,480); });
   }
 
   /**
